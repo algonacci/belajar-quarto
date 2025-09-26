@@ -1,0 +1,4 @@
+@startuml
+title Enterprise Architecture
+Alice -> Bob: Hello
+@enduml

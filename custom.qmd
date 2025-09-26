@@ -1,0 +1,16 @@
+---
+title: Quarto Example
+author: Eric Julianto
+format:
+    revealjs:
+        slide-number: true
+        chalkboard: true
+        transition: slide
+        background-transition: fade
+---
+
+# Hello World!
+Ini adalah test
+
+## Apa yahhh
+Insert meme here
