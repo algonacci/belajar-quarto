@@ -1,7 +1,25 @@
 ---
 title: Quarto Example
 author: Eric Julianto
+format: 
+    revealjs:
+        slide-number: true
 ---
 
 # Hello World!
 Here is some text.
+
+```{python}
+#| echo: True
+#| output-location: column
+print("Hello guys!")
+```
+
+# Section 1
+
+## Slide 1
+
+## Slide 2
+
+## Slide 3
+Insert some random text

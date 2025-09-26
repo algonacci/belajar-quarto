@@ -138,11 +138,17 @@ name = "belajar-quarto"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "jupyter" },
+    { name = "nbformat" },
     { name = "quarto-cli" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "quarto-cli", specifier = ">=1.8.24" }]
+requires-dist = [
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "nbformat", specifier = ">=5.10.4" },
+    { name = "quarto-cli", specifier = ">=1.8.24" },
+]
 
 [[package]]
 name = "bleach"
