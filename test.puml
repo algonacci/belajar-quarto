@@ -1,4 +1,21 @@
 @startuml
 title Enterprise Architecture
-Alice -> Bob: Hello
+
+actor User
+participant "Web App" as Web
+participant "API Gateway" as Gateway
+database "Database" as DB
+participant "Auth Service" as Auth
+
+User -> Web: Login Request
+Web -> Gateway: Forward Request
+Gateway -> Auth: Validate Credentials
+Auth -> DB: Check User Data
+DB --> Auth: User Details
+Auth --> Gateway: JWT Token
+Gateway --> Web: Authenticated Response
+Web --> User: Dashboard Access
+
+note right of Auth: JWT expires in 24h
+note over DB: PostgreSQL\nCluster
 @enduml
