@@ -17,7 +17,7 @@ format:
         smaller: false
         incremental: false
         preview-links: auto
-        logo: ""
+        logo: "logo.png"
         footer: ""
         margin: 0.1
         fig-responsive: true
